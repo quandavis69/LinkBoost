@@ -176,9 +176,9 @@ body {
 }
 
 .avatar img {
-    width: 143%;
-    height: 143%;
-    margin: -21.5%;
+    width: 250%;
+    height: 250%;
+    margin: -75%;
     border-radius: 50%;
     object-fit: cover;
     object-position: center;
