@@ -198,29 +198,31 @@ body {
         max-height: 90vh;
         overflow-y: auto;
         padding: var(--space-xl) var(--space-lg);
-        padding-right: calc(var(--space-lg) - 4px);
         scrollbar-width: thin;
         scrollbar-color: rgba(255, 255, 255, 0.15) transparent;
-        scrollbar-gutter: stable;
     }
 
     .container::-webkit-scrollbar {
-        width: 6px;
-        margin-right: 4px;
+        width: 8px;
     }
 
     .container::-webkit-scrollbar-track {
         background: transparent;
-        margin: 8px 0;
+        border-radius: 0 var(--radius-xl) var(--radius-xl) 0;
+        margin: 4px 0;
     }
 
     .container::-webkit-scrollbar-thumb {
         background: rgba(255, 255, 255, 0.15);
-        border-radius: 3px;
+        border-radius: 4px;
+        border: 2px solid transparent;
+        background-clip: padding-box;
     }
 
     .container::-webkit-scrollbar-thumb:hover {
         background: rgba(255, 255, 255, 0.25);
+        border: 2px solid transparent;
+        background-clip: padding-box;
     }
 }
 
