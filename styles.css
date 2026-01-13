@@ -176,14 +176,13 @@ body {
 }
 
 .avatar img {
-    width: 115%;
-    height: 115%;
-    margin: -7.5%;
+    width: 143%;
+    height: 143%;
+    margin: -21.5%;
     border-radius: 50%;
     object-fit: cover;
     object-position: center;
     background: #1a1a2e;
-    clip-path: circle(43.5%);
 }
 
 .brand-name {
