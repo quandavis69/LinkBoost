@@ -125,7 +125,6 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
             <div class="product-info">
                 <h3 class="product-title">${product.title}</h3>
-                <p class="product-price">${product.price}</p>
                 <div class="product-meta">
                     ${badgeHtml}
                     <span class="product-category">${categoryLabels[product.category] || product.category}</span>
