@@ -11,10 +11,13 @@
 }
 
 :root {
-    /* Premium Color Palette */
-    --primary: #6366f1;
-    --primary-light: #818cf8;
-    --primary-dark: #4f46e5;
+    /* Premium Color Palette - Green & Gold from Logo */
+    --primary: #c9a227;
+    --primary-light: #d4b445;
+    --primary-dark: #b8931f;
+    --accent-green: #2d5a3d;
+    --accent-green-light: #3d7a52;
+    --accent-green-dark: #1e3d29;
 
     /* Layered gradient backgrounds (Stripe-inspired) */
     --bg-gradient:
@@ -32,7 +35,7 @@
     --card-bg-hover: rgba(255, 255, 255, 0.08);
     --card-border: rgba(255, 255, 255, 0.08);
     --card-border-hover: rgba(255, 255, 255, 0.15);
-    --card-glow: 0 0 40px rgba(99, 102, 241, 0.15);
+    --card-glow: 0 0 40px rgba(201, 162, 39, 0.15);
 
     /* Typography */
     --text-primary: #f8fafc;
@@ -47,7 +50,7 @@
     --shadow-lg:
         0 20px 25px -5px rgba(0, 0, 0, 0.2),
         0 10px 10px -5px rgba(0, 0, 0, 0.1);
-    --shadow-glow: 0 0 60px rgba(99, 102, 241, 0.2);
+    --shadow-glow: 0 0 60px rgba(201, 162, 39, 0.2);
 
     /* Border radius - more refined */
     --radius-sm: 8px;
@@ -239,11 +242,11 @@ body {
     height: 96px;
     margin: 0 auto var(--space-md);
     border-radius: 50%;
-    background: linear-gradient(135deg, var(--primary) 0%, #ec4899 100%);
+    background: linear-gradient(135deg, var(--primary) 0%, var(--accent-green) 100%);
     padding: 3px;
     box-shadow:
         var(--shadow-md),
-        0 0 30px rgba(99, 102, 241, 0.3);
+        0 0 30px rgba(201, 162, 39, 0.3);
     transition: transform 0.4s var(--ease-spring), box-shadow 0.4s var(--ease-out);
     overflow: hidden;
 }
@@ -252,7 +255,7 @@ body {
     transform: scale(1.05);
     box-shadow:
         var(--shadow-lg),
-        0 0 50px rgba(99, 102, 241, 0.4);
+        0 0 50px rgba(201, 162, 39, 0.4);
 }
 
 .avatar img {
@@ -391,7 +394,7 @@ body {
     background: rgba(255, 255, 255, 0.08);
     border-color: var(--primary);
     box-shadow:
-        0 0 0 3px rgba(99, 102, 241, 0.15),
+        0 0 0 3px rgba(201, 162, 39, 0.15),
         0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
@@ -489,28 +492,30 @@ body {
 }
 
 .category-btn.active {
-    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
-    border-color: transparent;
-    color: #fff;
+    background: linear-gradient(135deg, var(--accent-green) 0%, var(--accent-green-dark) 100%);
+    border-color: var(--primary);
+    color: var(--primary-light);
     box-shadow:
-        0 4px 15px rgba(99, 102, 241, 0.35),
-        inset 0 1px 0 rgba(255, 255, 255, 0.15);
+        0 4px 15px rgba(45, 90, 61, 0.4),
+        0 0 20px rgba(201, 162, 39, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
 }
 
 /* ==========================================================================
-   Products Grid
+   Products Grid - 2 column grid for vertical cards
    ========================================================================== */
 .products-grid {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: var(--space-md);
 }
 
 /* ==========================================================================
-   Product Card - Premium glassmorphism
+   Product Card - Vertical layout with premium glassmorphism
    ========================================================================== */
 .product-card {
     display: flex;
+    flex-direction: column;
     background: var(--card-bg);
     border: 1px solid var(--card-border);
     border-radius: var(--radius-lg);
@@ -530,11 +535,11 @@ body {
 
 .product-card:hover {
     background: var(--card-bg-hover);
-    border-color: var(--card-border-hover);
-    transform: translateY(-4px) scale(1.01);
+    border-color: rgba(201, 162, 39, 0.3);
+    transform: translateY(-6px) scale(1.02);
     box-shadow:
-        0 20px 40px rgba(0, 0, 0, 0.2),
-        var(--card-glow);
+        0 20px 40px rgba(0, 0, 0, 0.25),
+        0 0 30px rgba(201, 162, 39, 0.15);
 }
 
 .product-card:active {
@@ -556,19 +561,18 @@ body {
 .product-card:nth-child(12) { animation-delay: 0.6s; }
 
 .product-image {
-    width: 100px;
-    min-width: 100px;
-    height: 100px;
+    width: 100%;
+    aspect-ratio: 1;
     background: linear-gradient(135deg, #fafafa 0%, #f0f0f0 100%);
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: var(--space-sm);
+    padding: var(--space-md);
     transition: background 0.3s var(--ease-out);
 }
 
 .product-card:hover .product-image {
-    background: linear-gradient(135deg, #ffffff 0%, #f5f5f5 100%);
+    background: linear-gradient(135deg, #ffffff 0%, #f8f8f8 100%);
 }
 
 .product-image img {
@@ -579,21 +583,18 @@ body {
 }
 
 .product-card:hover .product-image img {
-    transform: scale(1.08);
+    transform: scale(1.1);
 }
 
 .product-info {
-    flex: 1;
     padding: var(--space-md);
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    min-width: 0;
     gap: var(--space-sm);
 }
 
 .product-title {
-    font-size: 0.9375rem;
+    font-size: 0.8125rem;
     font-weight: 600;
     letter-spacing: -0.01em;
     color: var(--text-primary);
@@ -606,23 +607,24 @@ body {
 }
 
 .product-card:hover .product-title {
-    color: #fff;
+    color: var(--primary-light);
 }
 
 .product-meta {
     display: flex;
     align-items: center;
-    gap: var(--space-sm);
+    gap: 6px;
     flex-wrap: wrap;
+    margin-top: auto;
 }
 
 .product-badge {
-    font-size: 0.6875rem;
+    font-size: 0.625rem;
     font-weight: 600;
-    padding: 4px 10px;
-    border-radius: var(--radius-sm);
+    padding: 3px 8px;
+    border-radius: 6px;
     text-transform: uppercase;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.03em;
     transition: transform 0.3s var(--ease-spring);
 }
 
@@ -649,7 +651,7 @@ body {
 }
 
 .product-category {
-    font-size: 0.75rem;
+    font-size: 0.6875rem;
     font-weight: 500;
     color: var(--text-muted);
     transition: color 0.3s var(--ease-out);
@@ -759,14 +761,8 @@ body {
         font-size: 2.125rem;
     }
 
-    .product-image {
-        width: 110px;
-        min-width: 110px;
-        height: 110px;
-    }
-
     .product-title {
-        font-size: 1rem;
+        font-size: 0.875rem;
     }
 }
 
