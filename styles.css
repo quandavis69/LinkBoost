@@ -43,12 +43,52 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+/* Desktop: Full-screen gradient background */
+@media (min-width: 768px) {
+    body {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f5576c 100%);
+        background-attachment: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 40px 20px;
+    }
+}
+
 /* Container - Mobile First */
 .container {
     max-width: 480px;
     margin: 0 auto;
     padding: 20px 16px;
     min-height: 100vh;
+}
+
+/* Desktop: Centered phone-like container */
+@media (min-width: 768px) {
+    .container {
+        background: var(--bg-gradient);
+        border-radius: 32px;
+        box-shadow: 0 25px 80px rgba(0, 0, 0, 0.4);
+        min-height: auto;
+        max-height: 90vh;
+        overflow-y: auto;
+        padding: 30px 24px;
+        scrollbar-width: thin;
+        scrollbar-color: rgba(255,255,255,0.2) transparent;
+    }
+
+    .container::-webkit-scrollbar {
+        width: 6px;
+    }
+
+    .container::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    .container::-webkit-scrollbar-thumb {
+        background: rgba(255,255,255,0.2);
+        border-radius: 3px;
+    }
 }
 
 /* Profile Header */
@@ -437,51 +477,20 @@ body {
 .product-card:nth-child(5) { animation-delay: 0.25s; }
 .product-card:nth-child(6) { animation-delay: 0.3s; }
 
-/* Tablet & Desktop Responsive */
+/* Tablet & Desktop - Keep mobile layout but slightly larger */
 @media (min-width: 600px) {
-    .container {
-        max-width: 560px;
-        padding: 30px 24px;
-    }
-
     .brand-name {
         font-size: 2rem;
     }
 
     .product-image {
-        width: 130px;
-        min-width: 130px;
-        height: 130px;
+        width: 120px;
+        min-width: 120px;
+        height: 120px;
     }
 
     .product-title {
         font-size: 1rem;
-    }
-}
-
-@media (min-width: 768px) {
-    .container {
-        max-width: 700px;
-    }
-
-    .products-grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 16px;
-    }
-
-    .product-card {
-        flex-direction: column;
-    }
-
-    .product-image {
-        width: 100%;
-        min-width: unset;
-        height: 160px;
-    }
-
-    .product-info {
-        padding: 16px;
     }
 }
 
