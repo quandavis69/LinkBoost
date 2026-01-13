@@ -201,9 +201,9 @@ body {
     font-size: 0.9375rem;
     font-weight: 400;
     color: var(--text-secondary);
-    max-width: 260px;
     margin: 0 auto;
     line-height: 1.5;
+    white-space: nowrap;
 }
 
 /* ==========================================================================
