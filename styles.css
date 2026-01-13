@@ -152,7 +152,7 @@ body {
    ========================================================================== */
 .profile-header {
     text-align: center;
-    padding: var(--space-lg) 0 var(--space-xl);
+    padding: var(--space-sm) 0 var(--space-md);
 }
 
 .avatar {
@@ -213,7 +213,7 @@ body {
     display: flex;
     justify-content: center;
     gap: var(--space-sm);
-    margin-top: var(--space-lg);
+    margin-top: var(--space-sm);
 }
 
 .social-icon {
