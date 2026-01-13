@@ -198,16 +198,20 @@ body {
         max-height: 90vh;
         overflow-y: auto;
         padding: var(--space-xl) var(--space-lg);
+        padding-right: calc(var(--space-lg) - 4px);
         scrollbar-width: thin;
         scrollbar-color: rgba(255, 255, 255, 0.15) transparent;
+        scrollbar-gutter: stable;
     }
 
     .container::-webkit-scrollbar {
         width: 6px;
+        margin-right: 4px;
     }
 
     .container::-webkit-scrollbar-track {
         background: transparent;
+        margin: 8px 0;
     }
 
     .container::-webkit-scrollbar-thumb {
