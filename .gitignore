@@ -6,6 +6,10 @@ Thumbs.db
 .vscode/
 .idea/
 
+# Claude temp files
+.claude/
+tmpclaude-*
+
 # Logs
 *.log
 
