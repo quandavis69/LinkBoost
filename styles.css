@@ -433,8 +433,8 @@ body {
     gap: var(--space-sm);
     overflow-x: auto;
     overflow-y: visible;
-    padding: var(--space-sm) 0;
-    margin-bottom: var(--space-lg);
+    padding: var(--space-md) var(--space-md);
+    margin: 0 calc(-1 * var(--space-md)) var(--space-lg);
     scrollbar-width: none;
     -ms-overflow-style: none;
     -webkit-overflow-scrolling: touch;
