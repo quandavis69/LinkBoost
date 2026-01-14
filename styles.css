@@ -76,7 +76,18 @@
 html {
     font-size: 16px;
     scroll-behavior: smooth;
-    background: #0f0f1a;
+    background: #131320;
+}
+
+html::before {
+    content: '';
+    position: fixed;
+    top: -100px;
+    left: 0;
+    right: 0;
+    height: 200px;
+    background: linear-gradient(180deg, #131320 0%, #0f0f1a 100%);
+    z-index: -1;
 }
 
 body {
