@@ -4,97 +4,97 @@
 const products = [
     {
         id: 1,
-        title: "Wireless Bluetooth Earbuds Pro",
-        image: "https://m.media-amazon.com/images/I/61CVL27xTOL._AC_SL1500_.jpg",
-        link: "https://amzn.to/example1",
+        title: "Apple AirPods Pro (2nd Generation)",
+        image: "https://m.media-amazon.com/images/I/61SUj2aKoEL._AC_SL1500_.jpg",
+        link: "https://www.amazon.com/dp/B0D1XD1ZV3",
         category: "tech",
         badge: "deal"
     },
     {
         id: 2,
-        title: "LED Strip Lights 50ft RGB Color Changing",
-        image: "https://m.media-amazon.com/images/I/81ItkRyOaaL._AC_SL1500_.jpg",
-        link: "https://amzn.to/example2",
+        title: "Govee LED Strip Lights 100ft RGB",
+        image: "https://m.media-amazon.com/images/I/71dYDtmGHqL._AC_SL1500_.jpg",
+        link: "https://www.amazon.com/dp/B09B7NQ5YM",
         category: "home",
         badge: "trending"
     },
     {
         id: 3,
-        title: "Portable Blender USB Rechargeable",
-        image: "https://m.media-amazon.com/images/I/71yKJrLqHhL._AC_SL1500_.jpg",
-        link: "https://amzn.to/example3",
+        title: "Ninja Nutri-Blender Pro Personal Blender",
+        image: "https://m.media-amazon.com/images/I/61ozMkNtU+L._AC_SL1500_.jpg",
+        link: "https://www.amazon.com/dp/B09QHXBCJQ",
         category: "kitchen",
         badge: "new"
     },
     {
         id: 4,
-        title: "Smart Watch Fitness Tracker",
-        image: "https://m.media-amazon.com/images/I/71XMTLtZd5L._AC_SL1500_.jpg",
-        link: "https://amzn.to/example4",
+        title: "Apple Watch Series 9 GPS 41mm",
+        image: "https://m.media-amazon.com/images/I/71675CjxxzL._AC_SL1500_.jpg",
+        link: "https://www.amazon.com/dp/B0CSTJ2Y5F",
         category: "tech",
         badge: "deal"
     },
     {
         id: 5,
-        title: "Electric Milk Frother Handheld",
-        image: "https://m.media-amazon.com/images/I/51E0VFINRRL._AC_SL1500_.jpg",
-        link: "https://amzn.to/example5",
+        title: "Keurig K-Mini Coffee Maker",
+        image: "https://m.media-amazon.com/images/I/61-KUMrZURL._AC_SL1500_.jpg",
+        link: "https://www.amazon.com/dp/B09WV7Q4KJ",
         category: "kitchen",
         badge: null
     },
     {
         id: 6,
-        title: "Sunset Lamp Projector LED Light",
+        title: "WANQLYN Sunset Projection Lamp",
         image: "https://m.media-amazon.com/images/I/61dM1EM0SQL._AC_SL1500_.jpg",
-        link: "https://amzn.to/example6",
+        link: "https://www.amazon.com/dp/B09KMYGVTN",
         category: "home",
         badge: "trending"
     },
     {
         id: 7,
-        title: "Mini Projector Portable 1080P",
-        image: "https://m.media-amazon.com/images/I/61YS5XMWCBL._AC_SL1500_.jpg",
-        link: "https://amzn.to/example7",
+        title: "Samsung Galaxy Buds2 Pro",
+        image: "https://m.media-amazon.com/images/I/51bRaLcKafL._AC_SL1500_.jpg",
+        link: "https://www.amazon.com/dp/B0B9XXP5TL",
         category: "tech",
         badge: null
     },
     {
         id: 8,
-        title: "Acupressure Mat and Pillow Set",
-        image: "https://m.media-amazon.com/images/I/71y7CVITF6L._AC_SL1500_.jpg",
-        link: "https://amzn.to/example8",
+        title: "ProsourceFit Acupressure Mat Set",
+        image: "https://m.media-amazon.com/images/I/81-5BJmmZQL._AC_SL1500_.jpg",
+        link: "https://www.amazon.com/dp/B0BMT4Q2NL",
         category: "lifestyle",
         badge: "deal"
     },
     {
         id: 9,
-        title: "Ice Roller for Face & Eye",
+        title: "Ice Roller for Face Puffiness",
         image: "https://m.media-amazon.com/images/I/61b-A9BLNEL._SL1500_.jpg",
-        link: "https://amzn.to/example9",
+        link: "https://www.amazon.com/dp/B08RDMG7MY",
         category: "lifestyle",
         badge: "new"
     },
     {
         id: 10,
-        title: "Mini Waffle Maker Machine",
-        image: "https://m.media-amazon.com/images/I/71qMe7-YwkL._AC_SL1500_.jpg",
-        link: "https://amzn.to/example10",
+        title: "Dash Mini Waffle Maker",
+        image: "https://m.media-amazon.com/images/I/71CfvpJVHXL._AC_SL1500_.jpg",
+        link: "https://www.amazon.com/dp/B00TGTPOVY",
         category: "kitchen",
         badge: "trending"
     },
     {
         id: 11,
-        title: "Cloud LED Neon Sign Light",
-        image: "https://m.media-amazon.com/images/I/51W3Rw4hqBL._AC_SL1200_.jpg",
-        link: "https://amzn.to/example11",
+        title: "Philips Hue White Ambiance Bulbs",
+        image: "https://m.media-amazon.com/images/I/61yMx7HdYwL._AC_SL1500_.jpg",
+        link: "https://www.amazon.com/dp/B09BBLWPQZ",
         category: "home",
         badge: null
     },
     {
         id: 12,
-        title: "Scalp Massager Shampoo Brush",
+        title: "HEETA Scalp Massager Shampoo Brush",
         image: "https://m.media-amazon.com/images/I/71gRhDJBMpL._SL1500_.jpg",
-        link: "https://amzn.to/example12",
+        link: "https://www.amazon.com/dp/B076Q6442Z",
         category: "lifestyle",
         badge: "deal"
     }
