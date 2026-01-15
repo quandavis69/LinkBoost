@@ -553,6 +553,7 @@ body {
 .product-image {
     width: 100%;
     aspect-ratio: 1;
+    flex-shrink: 0;
     background: linear-gradient(135deg, #fafafa 0%, #f0f0f0 100%);
     display: flex;
     align-items: center;
@@ -581,12 +582,14 @@ body {
     display: flex;
     flex-direction: column;
     gap: var(--space-sm);
+    flex-grow: 1;
 }
 
 /* Desktop: Better product info spacing */
 @media (min-width: 768px) {
     .product-info {
         padding: var(--space-lg);
+        min-height: 120px;
     }
 }
 
