@@ -706,6 +706,25 @@ body {
     letter-spacing: 0.01em;
 }
 
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-lg);
+    margin-bottom: var(--space-md);
+}
+
+.footer-links a {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--text-muted);
+    text-decoration: none;
+    transition: color 0.3s var(--ease-out);
+}
+
+.footer-links a:hover {
+    color: var(--primary);
+}
+
 .copyright {
     font-size: 0.75rem;
     font-weight: 500;
